@@ -37,7 +37,7 @@ validation = () => {
     if(email_output){
         console.log(email_output);
     } else {
-        alert('Incorrect email')
+       // alert('Incorrect email')
 
     }
 
@@ -49,22 +49,24 @@ validation = () => {
     if(valid_path){
         //alert('correct url')
     }else{
-        alert('Incorrect url')
+       // alert('Incorrect url')
 
     }
 
     // dropdown validations
 
-    const dropdowns = document.getElementById('dropdown_item').value;
-    if(dropdowns.value = "none"){
+    const dropdowns_obj = document.getElementById('dropdown_item').value;
+    if(dropdowns_obj > 0){
+        console.log('accepted dropdowns');
+    }else
+    {
         alert('Please select an option')
-    }else{
-        alert('accepted dropdowns')
-
+        
     }
 
+    // documents and pictures
 
-
+    
 }
 
 
