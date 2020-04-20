@@ -4,10 +4,12 @@
         <title>Assignment</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="C:/Users/asreepathi/Projects/Assignment/style/style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+
     </head>
     <body style = "padding-top: 30px; background-color:#DCDCDC">
     <div class = "container">
@@ -35,7 +37,8 @@
                     
                     <div class = "col-sm-6 col-md-6 col-lg-6">
                       <select id="dropdown_item" class="form-control">
-                     <option>Restaurant Owner</option>
+                        <option value = "none"></option>
+                     <option value = "4">Restaurant Owner</option>
                    </select> 
                    </div>
                    <div class = "col-sm-6 col-md-6 col-lg-6">
@@ -57,11 +60,12 @@
                   <div class = "row no-gutter">
                     <div class = "col-md-12">
                   <div class = "col-sm-12 col-md-12 col-lg-12">
-                      <input type="text" id="restaurant_name" class="form-control" placeholder="Website Link/online listing link">
+                      <input type="text" id="website_url" class="form-control" placeholder="Website Link/online listing link">
                   </div>
                   <div class = "col-sm-6 col-md-6 col-lg-6">
                       <select id="dropdown_item" class="form-control">
-                      <option>No Of Outlets</option>
+                        <option value = "none"></option>
+                      <option value = "5">No Of Outlets</option>
                     </select> 
                   </div>
                   <div class = "col-sm-6 col-md-6 col-lg-6">
@@ -77,22 +81,26 @@
                   <div class = "col-md-12">
                     <div class = "col-sm-6 col-md-6 col-lg-6">
                       <select id="dropdown_item" class="form-control">
-                      <option>Cost for Two</option>
+                        <option value = "none"></option>
+                      <option value = "6">Cost for Two</option>
                     </select> 
                   </div>
                   <div class = "col-sm-6 col-md-6 col-lg-6">
                       <select id="dropdown_item" class="form-control">
-                      <option>Type of Cuisnie</option>
+                        <option value = "none"></option>
+                      <option value = "1">Type of Cuisnie</option>
                     </select> 
                   </div>
                   <div class = "col-sm-6 col-md-6 col-lg-6">
                       <select id="dropdown_item" class="form-control">
-                      <option>establishment Type</option>
+                        <option></option>
+                      <option value = "2">establishment Type</option>
                     </select> 
                   </div>
                   <div class = "col-sm-6 col-md-6 col-lg-6">
                       <select id="dropdown_item" class="form-control">
-                      <option>Do you currently support delivery</option>
+                        <option value = "none"></option>
+                      <option value = "3">Do you currently support delivery</option>
                     </select> 
                   </div>
                   </div>
@@ -101,7 +109,7 @@
 
               <div class="form-group">
                 <div class = "col-md-12">
-                  <label>Documents(JPEG, pdf)</label>
+                  <label>Documents<span style = "font-style:italic">(Jpeg, PDF)</span></label>
                 </div>
                     
                     <div class="row no-gutter">
@@ -151,7 +159,7 @@
               </div>
               
               <div class = "col-sm-12 col-md-12 col-lg-12">
-              <button type="submit" class="btn btn-primary" style = "width:100%; font-weight:bold;background-color: #fc8019;">SUBMIT</button>
+              <button type="button" class="btn btn-primary" id = "submit" onclick="validation()" style = "width:100%; font-weight:bold;background-color: #fc8019;">SUBMIT</button>
             </div>
 
         </form>    
