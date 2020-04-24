@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="main.js"></script>
 
@@ -115,18 +116,18 @@
                     <div class="row no-gutter">
                       <div class = "col-md-12">
                       <div class="col-sm-4">
-                        <input type="text" id="shop_license" class="form-control" placeholder="Shop License">
-                        <i class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019"></i>
+                        <input type="file" style = "visibility: hidden" id="shop_license1" class="form-control" placeholder="Shop License">
+                        <button type="file" id="shop_license" class="form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></button>
                       </div>
                       <div class="col-sm-4">
                         <div>
-                          <input type="text" id="fssai" class="form-control" placeholder="FSSAI">
-                          <i class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019"></i>
+                          <input type="file" id="fssai1" class="form-control" placeholder="FSSAI">
+                          <button type="file" id = "fssai_1" class="form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></button>
                         </div>
                       </div>
                       <div class="col-sm-4">
-                        <input type="text" id="gstin_pan" class="form-control" placeholder="GSTIN/PAN">
-                        <i class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019"></i>
+                        <input type="file" id="gstin_pan1" class="form-control" placeholder="GSTIN/PAN">
+                        <button type="file" id = "gstin_pan" class="form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></button>
                       </div>
                     </div>
                   </div>
@@ -139,20 +140,20 @@
                   <div class="row no-gutter">
                     <div class = "col-sm-12">
                     <div class="col-sm-3">
-                      <input type="text" id="facade" class="form-control" placeholder="Facade">
-                      <i class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019"></i>
+                      <input type="file" id="facade1" class="form-control" placeholder="Facade">
+                      <button type="file" id = "facade_1" class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></i>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" id="kitchen" class="form-control" placeholder="Kitchen">
-                      <i class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019"></i>
+                      <input type="file" id="kitchen1" class="form-control" placeholder="Kitchen">
+                      <button type="file" id = "kitchen_1" class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></i>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" id="dining" class="form-control" placeholder="Dining/Packaging">
-                      <i class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019"></i>
+                      <input type="file" id="dining1" class="form-control" placeholder="Dining/Packaging">
+                      <button type="file" id ="dining_1" class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></i>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" id="locality" class="form-control" placeholder="Locality">
-                      <i class= "form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019"></i>
+                      <input type="file" id="locality1" class="form-control" placeholder="Locality">
+                      <button type="file" id = "locality_1" class= "form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></i>
                       </div>
                   </div>
                 </div>
