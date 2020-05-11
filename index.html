@@ -106,59 +106,62 @@
                   </div>
                   </div>
                 </div>      
-                </div> <br> 
+                </div> 
 
               <div class="form-group">
                 <div class = "col-md-12">
                   <label>Documents<span style = "font-style:italic">(Jpeg, PDF)</span></label>
                 </div>
                     
-                    <div class="row no-gutter">
-                      <div class = "col-md-12">
-                      <div class="col-sm-4">
-                        <input type="file" style = "visibility: hidden" id="shop_license1" class="form-control" placeholder="Shop License">
-                        <button type="file" id="shop_license" class="form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></button>
+                    <div class="row no-gutter" >
+                      <div class = "col-md-12"  style="margin-bottom: -33px;">
+                      <div class="col-sm-4" style = "overflow: hidden;">
+                        <span class="white-bg-in" id= "file-name"></span>
+                        <button type="button" id="shop_license" class="form-control-feedback remove-events glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></button>
+                        <input type="file" style = "visibility: hidden;" id="shop_license1" class="form-control" placeholder="Shop License" onchange="input_updated_value(event)"/>
                       </div>
-                      <div class="col-sm-4">
-                        <div>
-                          <input type="file" id="fssai1" class="form-control" placeholder="FSSAI">
-                          <button type="file" id = "fssai_1" class="form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></button>
-                        </div>
+                      <div class="col-sm-4" style = "overflow: hidden"> 
+                          <span class="white-bg-in" id= "file-name1"></span>
+                          <button type="button" id = "fssai_1" class="form-control-feedback remove-events glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick_1()"></button>
+                          <input type="file" style = "visibility: hidden;" id="fssai1"  class="form-control" placeholder="FSSAI"  onchange="input_updated_value_a(event)"/>   
                       </div>
-                      <div class="col-sm-4">
-                        <input type="file" id="gstin_pan1" class="form-control" placeholder="GSTIN/PAN">
-                        <button type="file" id = "gstin_pan" class="form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></button>
+                      <div class="col-sm-4" style = "overflow: hidden">
+                        <span class="white-bg-in" id= "file-name2"></span>
+                        <button type="button" id = "gstin_pan" class="form-control-feedback remove-events glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick_2()"></button>
+                        <input type="file" style = "visibility: hidden;" id="gstin_pan1" class="form-control" placeholder="GSTIN/PAN" onchange="input_updated_value_b(event)"/>
                       </div>
                     </div>
                   </div>
-                </div>
-               
+                </div>          
             <div class="form-group">
               <div class = "col-md-12">
                 <label>Pictures</label>
               </div>     
                   <div class="row no-gutter">
-                    <div class = "col-sm-12">
-                    <div class="col-sm-3">
-                      <input type="file" id="facade1" class="form-control" placeholder="Facade">
-                      <button type="file" id = "facade_1" class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></i>
+                    <div class = "col-sm-12"  style="margin-bottom: -33px;">
+                    <div class="col-sm-3" style = "overflow: hidden">
+                      <span class="white-bg-in" id= "file-name3"></span>
+                      <input type="file" id="facade1" style = "visibility: hidden" class="form-control" placeholder="Facade" onchange="input_updated_value_c(event)">
+                      <button type="button" id = "facade_1" class=" form-control-feedback remove-events glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick_3()"></i>
                     </div>
-                    <div class="col-sm-3">
-                      <input type="file" id="kitchen1" class="form-control" placeholder="Kitchen">
-                      <button type="file" id = "kitchen_1" class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></i>
+                    <div class="col-sm-3" style = "overflow: hidden">
+                      <span class="white-bg-in" id= "file-name4" ></span>
+                      <input type="file" id="kitchen1" style = "visibility: hidden" class="form-control" placeholder="Kitchen" onchange="input_updated_value_d(event)">
+                      <button type="button" id = "kitchen_1" class=" form-control-feedback remove-events glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick_4()"></i>
                     </div>
-                    <div class="col-sm-3">
-                      <input type="file" id="dining1" class="form-control" placeholder="Dining/Packaging">
-                      <button type="file" id ="dining_1" class=" form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></i>
+                    <div class="col-sm-3" style = "overflow: hidden">
+                      <span class="white-bg-in" id= "file-name5"></span>
+                      <input type="file" id="dining1" style = "visibility: hidden" class="form-control" placeholder="Dining/Packaging" onchange="input_updated_value_e(event)">
+                      <button type="button" id ="dining_1" class=" form-control-feedback remove-events glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick_5()"></i>
                     </div>
-                    <div class="col-sm-3">
-                      <input type="file" id="locality1" class="form-control" placeholder="Locality">
-                      <button type="file" id = "locality_1" class= "form-control-feedback glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick()"></i>
+                    <div class="col-sm-3" style = "overflow: hidden">
+                      <span class="white-bg-in" id= "file-name6"></span>
+                      <input type="file" id="locality1" style = "visibility: hidden" class="form-control" placeholder="Locality" onchange="input_updated_value_f(event)">
+                      <button type="button" id = "locality_1" class= "form-control-feedback remove-events glyphicon glyphicon-open" style = "color:#fc8019" onclick="uploadclick_6()"></i>
                       </div>
                   </div>
                 </div>
-              </div>
-              
+              </div>     
               <div class = "col-sm-12 col-md-12 col-lg-12">
               <button type="button" class="btn btn-primary" id = "submit" onclick="validation()" style = "width:100%; font-weight:bold;background-color: #fc8019;">SUBMIT</button>
             </div>

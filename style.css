@@ -9,3 +9,13 @@
   padding-right: 0;
   padding-left: 0;
 }
+.remove-events{
+  pointer-events: auto !important;
+}
+.white-bg-in{
+    background: white;
+    border: 1px solid #ededed;
+    width: 338px;
+    height: 34px;
+    display: inline-block;
+}
